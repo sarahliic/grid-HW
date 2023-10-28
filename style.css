@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Grid style Start */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/*  BOX 1 */
+.iphone-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 100%;
+  grid-column: span 2;
+}
+.iphone-content {
+  width: 30%;
+  text-align: left;
+  line-height: 2;
+  font-size: 1rem;
+}
+.IPHONE6s,
+.learn-more {
+  color: #aba3a7;
+}
+.info {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.iphone-box img {
+  max-width: 10em;
+}
+/* BOX 2 */
+.chamical-labs-box {
+  display: grid;
+  gap: 1px;
+  padding: 1rem;
+  text-align: center;
+  grid-column: span 2;
+  background-color: #f7f8f9;
+}
+.info {
+  font-size: 1.5rem;
+}
+.download {
+  color: #85c0c2;
+}
+/* BOX 3 */
+.keyboard-box {
+  line-height: 3;
+  background-color: #f05638;
+  text-align: center;
+  grid-column: 1;
+  height: max-content;
+}
+.keyboard-box img {
+  width: 90%;
+}
+.brand-color {
+  font-weight: bold;
+  color: #ffffff;
+}
+.learn {
+  color: #ffc80a;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* BOX 4 */
+.tv-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+  /* height: 40vh; */
+  /* width: 40%; */
+  padding: 1rem 1rem 0 1rem;
+  grid-column: span 2;
+}
+.tv-box > * {
+  flex: 1;
+}
+.tv-content {
+  text-align: center;
+  line-height: 2;
+}
+.tv-content p {
+  color: #aba3a7;
+  font-weight: bold;
+}
+
+.tv-box img {
+  width: 60%;
+}
+.tv-details {
+  text-align: left;
+}
+.tv-details p {
+  color: #aba3a7;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+.tv-details a {
+  color: #669697;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 0.3em;
+  font-size: 0.7rem;
+}
+/* iCloud Box 5 */
+.icloud-box {
+  background-color: #8f76bc;
+  text-align: center;
+  color: #ffffff;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 30%; */
+  grid-row: span 2;
+}
+.image-icloud {
+  text-align: center;
+  background-color: #8166b0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 1rem;
+}
+.popular-text {
+  background-image: url("	https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed9663e707e7d_Shape.png");
+  background-repeat: no-repeat;
+  background-position: 10%;
+  background-size: 15%;
+  width: 8vw;
+  margin-bottom: 1rem;
+  background-color: #8e76bcce;
+  padding: 0.3rem 0;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.image-icloud img {
+  width: 60%;
+}
+.btn-learn-more {
+  color: #000;
+  border: none;
+  background-color: #ffc80a;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+/* Box 5 */
+.video-game-box {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: flex-start;
+  align-items: center;
+  /* display: inline-block; */
+  /* width: 20%; */
+  text-align: center;
+  /* line-height: 3; */
+  grid-row: 3;
+}
+.video-game-box img {
+  width: 80%;
+}
+.video-game-box a {
+  color: #27b9c2;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Box 6 */
+.our-brand-box {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #93b6b7;
+  display: inline-block;
+  padding-right: 1rem;
+  position: relative;
+  grid-column: span 2;
+}
+.our-brand-box .best-choice {
+  display: block;
+  color: #ffffff;
+  border: none;
+  background-color: #f05638;
+  border-radius: 0.5rem;
+  min-width: 15%;
+  letter-spacing: 5px;
+  min-height: 5vh;
+  margin: 1rem;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+.our-brand-box h1 {
+  color: #ffffff;
+  line-height: 2;
+}
+.our-brand-box img {
+  width: 30em;
+}
+/* Twitter Box 8 */
+.tiwitter-box {
+  background-color: #38d5f4;
+  grid-row: 4;
+}
+.twitter-img {
+  background-color: #35cfed;
+}
+.tiwitter-box img {
+  margin-top: 2rem;
+  width: 30%;
+}
+.twitter-img p {
+  letter-spacing: 2px;
+}
+/* Box 9 */
+.box9 {
+  text-align: center;
+  padding: 0 2rem;
+  /* max-width: max-content; */
+  /* grid-column: 2;
+  grid-row: 4; */
+}
+.popular-btn {
+  color: #ffffff;
+  border: none;
+  background-color: #7bc424;
+  border-radius: 0.5rem;
+  min-width: 15%;
+  letter-spacing: 5px;
+  min-height: 5vh;
+  margin: 1rem;
+  padding: 0 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Box 10 */
+.box10 {
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  grid-column: span 2;
+}
+.box10 img {
+  width: 40%;
+}
+.box10 h3 {
+  font-weight: 100;
+}
